@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.box {
+
+    display: flex;
+
+}
+
+.fotoProduto {
+
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.perfume {
+    width: 100%;
+    background-size: cover;
+
+}
+
+.textoProduto {
+    background: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 0 10px 10px 0px;
+
+}
+
+.textoProduto h1 {
+
+    font-family: 'Fraunces', serif;
+    counter-reset: hsl(212, 21%, 14%);
+}
+
+
+.letra {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(0, 0%, 59%);
+
+}
+
+.verde {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.descricao {
+
+    color: hsl(0, 0%, 59%);
+}
+
+span {
+    color:hsl(0, 0%, 59%);
+    font-size: 14px;
+    text-decoration: line-through;
+
+}
+
+button {
+
+    background: hsl(158, 36%, 37%);;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(159, 86%, 14%, 0.852);
+    transition: 2000ms;
+}
+
+
+
+@media (max-width:480px) {
+
+    .box {
+
+        flex-direction: column;
+    }
+
+    
+    .fotoProduto {
+        width: 85vw;
+        height: 38vh;
+        border-radius: 10px 10px 0 0;
+
+
+    }
+
+    .textoProduto {
+
+        width: 85vw;
+        border-radius: 0 0 10px 10px;
+        row-gap: 20px;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:600px) {
+
+
+    .box {
+
+        flex-direction: column;
+    }
+
+
+    .fotoProduto {
+
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 170px;
+        border-radius: 10px 10px;
+        width: 70vw;
+    }
+
+    .perfume {
+
+        display: none;
+
+    }
+
+    .textoProduto {
+        width: 70vw;
+        position: relative;
+        bottom: 20px;
+        border-radius: 0 0 10px 10px;
+
+
+    }
+
+
+
+
+}
