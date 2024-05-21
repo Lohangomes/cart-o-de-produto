@@ -1,5 +1,5 @@
 # Frontend Mentor - Product preview card component
-
+https://lohangomes.github.io/cart-o-de-produto/
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
